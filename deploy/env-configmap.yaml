@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: test-884432775011-dev
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: testing
+  POSTGRES_DB: hoamx1_db
+  POSTGRES_HOST: rds-884432775011-hoamx1.cjz9a6ia4kcw.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8080
+metadata:
+  name: env-config
