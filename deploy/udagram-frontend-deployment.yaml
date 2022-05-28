@@ -15,7 +15,7 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-        - image: hust1670/udagram-frontend:v2
+        - image: hust1670/udagram-frontend:v3
           name: udagram-frontend
           imagePullPolicy: Always
           ports:
