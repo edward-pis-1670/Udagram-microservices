@@ -22,12 +22,12 @@ install:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
-  - docker tag udagram-api-feed hust1670/udagram-api-feed:v1
-  - docker tag udagram-api-user hust1670/udagram-api-user:v1
-  - docker tag udagram-frontend hust1670/udagram-frontend:v1
-  - docker tag reverseproxy hust1670/reverseproxy:v1
+  - docker tag udagram-api-feed hust1670/udagram-api-feed:v2
+  - docker tag udagram-api-user hust1670/udagram-api-user:v2
+  - docker tag udagram-frontend hust1670/udagram-frontend:v2
+  - docker tag reverseproxy hust1670/reverseproxy:v2
 
-  - docker push hust1670/udagram-api-feed:v1
-  - docker push hust1670/udagram-api-user:v1
-  - docker push hust1670/udagram-frontend:v1
-  - docker push hust1670/reverseproxy:v1
+  - docker push hust1670/udagram-api-feed:v2
+  - docker push hust1670/udagram-api-user:v2
+  - docker push hust1670/udagram-frontend:v2
+  - docker push hust1670/reverseproxy:v2
