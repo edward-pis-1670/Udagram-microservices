@@ -18,6 +18,13 @@ spec:
         - image: hust1670/udagram-api-user:v1
           name: backend-user
           imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "4096Mi"
+              cpu: "500m"
           env:
             - name: URL
               valueFrom:
