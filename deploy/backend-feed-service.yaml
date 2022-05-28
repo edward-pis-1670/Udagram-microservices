@@ -8,12 +8,8 @@ metadata:
   selfLink: /api/v1/namespaces/default/services/backend-feed
 spec:
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+    - name: "8080"
+      port: 8080
+      targetPort: 8080
   selector:
-    app: backend-feed
-  sessionAffinity: None
-  type: ClusterIP
-status:
-  loadBalancer: {}
+    service: backend-feed

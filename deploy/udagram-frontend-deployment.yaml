@@ -15,15 +15,8 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-      - image: hust1670/udagram-frontend:v1
-        name: udagram-frontend
-        imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "1024Mi"
-            cpu: "500m"   
-        ports:
-        - containerPort: 8081
+        - image: hust1670/udagram-frontend:v1
+          name: udagram-frontend
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 8100
