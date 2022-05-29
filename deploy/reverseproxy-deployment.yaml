@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: hust1670/reverseproxy:v3
+      - image: hust1670/reverseproxy:v1
         name: reverseproxy
         imagePullPolicy: Always
         ports:

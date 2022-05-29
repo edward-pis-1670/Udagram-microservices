@@ -1,14 +1,14 @@
 export const config = {
-  username: "hoamx1",
-  password: "hoa12345",
-  database: "hoamx1_db",
-  host: "rds-884432775011-hoamx1.cjz9a6ia4kcw.us-east-1.rds.amazonaws.com",
+  username: process.env.POSTGRES_USERNAME,
+  password: process.env.POSTGRES_PASSWORD,
+  database: process.env.POSTGRES_DB,
+  host: process.env.POSTGRES_HOST,
   dialect: "postgres",
-  aws_region: "us-east-1",
-  aws_profile: "default",
-  aws_media_bucket: "test-884432775011-dev",
-  url: "http://localhost:8080",
+  aws_region: process.env.AWS_REGION,
+  aws_profile: process.env.AWS_PROFILE,
+  aws_media_bucket: process.env.AWS_BUCKET,
+  url: process.env.URL,
   jwt: {
-    secret: "testing",
+    secret: process.env.JWT_SECRET,
   },
 };
