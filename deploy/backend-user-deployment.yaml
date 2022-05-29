@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: backend-user
+    service: backend-user
   name: backend-user
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backend-user
+      service: backend-user
   template:
     metadata:
       labels:
-        app: backend-user
+        service: backend-user
     spec:
       containers:
         - image: hust1670/udagram-api-user:v1
@@ -20,10 +20,10 @@ spec:
           imagePullPolicy: Always
           resources:
             requests:
-              memory: "64Mi"
+              memory: "200Mi"
               cpu: "250m"
             limits:
-              memory: "4096Mi"
+              memory: "2048Mi"
               cpu: "500m"
           env:
             - name: URL
